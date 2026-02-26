@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GP Infotech - IT Solutions & Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">
+        <img src="logo.jpeg" alt="GP Infotech Logo">
+        <h2>GP INFOTECH</h2>
+    </div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://wa.me/918155058649?text=Hello%20GP%20Infotech" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-left">
+        <h1>Sales & Service of IT Products</h1>
+        <p>GP INFOTECH provides reliable computer sales, repair services, networking solutions and CCTV installation with expert support.</p>
+        <a href="#contact" class="quote-btn">Get Free Quote <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="hero-right">
+        <div class="card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>GP Infotech</h3>
+            <p>Trusted Technology Partner Since 2020</p>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+        <div class="service-card" onclick="openService(0)">
+            <i class="fas fa-desktop"></i>
+            <h3>Computer Sales</h3>
+            <p>Desktop, Laptop, Printer and all IT accessories</p>
+            <div class="service-details">
+                <p>✓ Brand new desktops & laptops<br>✓ Printers and IT accessories<br>✓ Best price guarantee<br>✓ 1 year warranty</p>
+            </div>
+        </div>
+        <div class="service-card" onclick="openService(1)">
+            <i class="fas fa-tools"></i>
+            <h3>Repair & Service</h3>
+            <p>Fast and reliable repair service</p>
+            <div class="service-details">
+                <p>✓ Computer & laptop repair<br>✓ Printer servicing<br>✓ Virus removal<br>✓ Data recovery<br>✓ On-site support</p>
+            </div>
+        </div>
+        <div class="service-card" onclick="openService(2)">
+            <i class="fas fa-shield-alt"></i>
+            <h3>CCTV & Networking</h3>
+            <p>Professional installation solutions</p>
+            <div class="service-details">
+                <p>✓ CCTV installation<br>✓ Network setup<br>✓ WiFi solutions<br>✓ 24/7 monitoring<br>✓ Remote access</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>GP INFOTECH is a trusted IT service provider offering computer sales, repair services, networking and CCTV solutions. We focus on quality, reliability and customer satisfaction.</p>
+</section>
+
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +91 99255 81523</p>
+            <p><i class="fas fa-envelope"></i> gpinfotech@email.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Vapi, Gujarat</p>
+        </div>
+        <form action="contact.php" method="POST" class="contact-form" id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 GP Infotech. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
